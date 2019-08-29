@@ -20,10 +20,6 @@ body {
     opacity: 0;
 }
 
-.menu__btn {
-}
-
-
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
@@ -49,10 +45,8 @@ body {
     position: fixed;
     top: 33px;
     left: 20px;
-
     width: 26px;
     height: 26px;
-
     cursor: pointer;
     z-index: 1;
 }
@@ -60,24 +54,19 @@ body {
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
+    content: '';
     display: block;
     position: absolute;
-
     width: 100%;
     height: 2px;
-
     background-color: #616161;
-
-    transition-duration: .25s;
 }
 
 .menu__btn > span::before {
-    content: '';
     top: -8px;
 }
 
 .menu__btn > span::after {
-    content: '';
     top: 8px;
 }
 
@@ -93,7 +82,6 @@ body {
     padding: 80px 0;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    transition-duration: .25s;
     list-style-type: none;
     margin-right: 12px;
 }
@@ -102,15 +90,10 @@ body {
 .menu-item {
     display: block;
     padding: 5px 6px;
-
     color: #333;
-
     font-size: 20px;
     font-weight: 600;
-
     text-decoration: none;
-
-    transition-duration: .25s;
 }
 
 .menu-item:hover {
@@ -193,22 +176,22 @@ body {
     position: relative;
 }
 
-.mySlides {
+.slides {
     width: 380px;
     height: 360px;
     margin: 0 auto;
 
 }
 
-.w3-display-left {
+.slider-display-left {
     opacity: 0;
 }
 
-.w3-display-right {
+.slider-display-right {
     opacity: 0;
 }
 
-.w3-btn, .w3-button {
+.w3-btn, .slider-button {
     opacity: 0;
 }
 
@@ -295,7 +278,7 @@ body {
     text-transform: uppercase;
 }
 
-.contact-p {
+.contact-title {
     color: #314584;
     font-size: 48px;
     font-weight: 400;
@@ -496,21 +479,21 @@ body {
         margin: 70px 0 182px 50px;
     }
 
-    .w3-display-left {
+    .slider-display-left {
         position: absolute;
         top: 50%;
         left: 0%;
         transform: translate(0%, -50%);
     }
 
-    .w3-display-right {
+    .slider-display-right {
         position: absolute;
         top: 50%;
         right: 0%;
         transform: translate(0%, -50%);
     }
 
-    .w3-btn, .w3-button {
+    .w3-btn, .slider-button {
         border: none;
         display: inline-block;
         padding: 8px 16px;
@@ -524,7 +507,7 @@ body {
         white-space: nowrap;
     }
 
-    .w3-black, .w3-hover-black:hover {
+    .slider-black, .w3-hover-black:hover {
         color: #fff;
         background-color: #314584;
         opacity: 0.7;
@@ -534,7 +517,7 @@ body {
         font-size: 53px;
     }
 
-    .mySlides {
+    .slides {
         width: 480px;
         height: 460px;
     }
@@ -555,7 +538,7 @@ body {
         margin: 70px 0 182px 450px;
     }
 
-    .mySlides {
+    .slides {
         width: 680px;
         height: 660px;
     }

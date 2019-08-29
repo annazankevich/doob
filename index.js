@@ -1,4 +1,4 @@
-var slideIndex = 1;
+let slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
@@ -6,8 +6,8 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
+    let i;
+    let x = document.getElementsByClassName("slides");
     if (n > x.length) {
         slideIndex = 1
     }
