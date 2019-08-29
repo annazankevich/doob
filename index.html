@@ -9,6 +9,10 @@
 <body>
 <header class="header wrapper">
     <div class="logo"></div>
+    <input class="menu__toggle" id="menu__toggle" type="checkbox"/>
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
     <ul class="menu">
         <li class="menu-item"><a class="item-link" href="#home">Home.</a></li>
         <li class="menu-item"><a class="item-link" href="#about">About us.</a></li>
@@ -31,7 +35,14 @@
             <a href="#contact" class="getintouch" target="_blank">Get in Touch</a>
         </div>
     </div>
-    <div class="image"></div>
+    <section class="section">
+        <div class="slideshow">
+            <img class="mySlides" src="images/illustration.png">
+            <img class="mySlides" src="images/illustration2.png">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </section>
 </section>
 <section class="portfolio wrapper" id="portfolio">
     <h3 class="portfolio-title" id="blog">See some of our
@@ -77,5 +88,6 @@
         <li class="social-link dribble"><a href="https://dribbble.com" target="_blank"></a></li>
     </ul>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
